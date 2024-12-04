@@ -2,15 +2,11 @@ name: Playwright Tests
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: "Log level"
+      value:
+        description: "some value to pass to the workflow"
         required: false
-        default: "warning"
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
+        default: ""
+        type: string
   push:
     branches: [main]
   pull_request:
