@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/playwright.config.ts",
-    "rootDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+    "configFile": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/playwright.config.ts",
+    "rootDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -29,13 +29,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "DE_CHROME",
         "name": "DE_CHROME",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -43,13 +43,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "DE_FIREFOX",
         "name": "DE_FIREFOX",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -57,13 +57,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "DE_SAFARI",
         "name": "DE_SAFARI",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -71,13 +71,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "MO_PIXEL_7",
         "name": "MO_PIXEL_7",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -85,13 +85,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "MO_IPHONE15",
         "name": "MO_IPHONE15",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -99,13 +99,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "DE_EDGE",
         "name": "DE_EDGE",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -156,12 +156,12 @@
                     {
                       "workerIndex": 0,
                       "status": "failed",
-                      "duration": 369,
+                      "duration": 336,
                       "error": {
                         "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                           "column": 29,
                           "line": 7
                         },
@@ -170,20 +170,20 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                             "column": 29,
                             "line": 7
                           },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:57.096Z",
+                      "startTime": "2024-12-04T08:52:43.136Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                         "column": 29,
                         "line": 7
                       }
@@ -220,12 +220,12 @@
                     {
                       "workerIndex": 3,
                       "status": "failed",
-                      "duration": 2296,
+                      "duration": 722,
                       "error": {
                         "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                           "column": 29,
                           "line": 7
                         },
@@ -234,20 +234,20 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                             "column": 29,
                             "line": 7
                           },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:57.089Z",
+                      "startTime": "2024-12-04T08:52:43.118Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                         "column": 29,
                         "line": 7
                       }
@@ -284,12 +284,12 @@
                     {
                       "workerIndex": 6,
                       "status": "failed",
-                      "duration": 609,
+                      "duration": 722,
                       "error": {
                         "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                           "column": 29,
                           "line": 7
                         },
@@ -298,20 +298,20 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                             "column": 29,
                             "line": 7
                           },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:01.692Z",
+                      "startTime": "2024-12-04T08:52:50.879Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                         "column": 29,
                         "line": 7
                       }
@@ -348,12 +348,12 @@
                     {
                       "workerIndex": 9,
                       "status": "failed",
-                      "duration": 291,
+                      "duration": 246,
                       "error": {
                         "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                           "column": 29,
                           "line": 7
                         },
@@ -362,20 +362,20 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                             "column": 29,
                             "line": 7
                           },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:04.883Z",
+                      "startTime": "2024-12-04T08:52:53.775Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                         "column": 29,
                         "line": 7
                       }
@@ -412,12 +412,12 @@
                     {
                       "workerIndex": 12,
                       "status": "failed",
-                      "duration": 510,
+                      "duration": 369,
                       "error": {
                         "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                           "column": 29,
                           "line": 7
                         },
@@ -426,20 +426,20 @@
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                             "column": 29,
                             "line": 7
                           },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:06.841Z",
+                      "startTime": "2024-12-04T08:52:58.951Z",
                       "attachments": [],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
                         "column": 29,
                         "line": 7
                       }
@@ -469,9 +469,9 @@
                   "projectName": "DE_EDGE",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 15,
                       "status": "failed",
-                      "duration": 9,
+                      "duration": 4,
                       "error": {
                         "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
                         "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
@@ -484,7 +484,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:10.692Z",
+                      "startTime": "2024-12-04T08:53:01.907Z",
                       "attachments": []
                     }
                   ],
@@ -536,12 +536,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 3105,
+                      "duration": 6409,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:57.113Z",
+                      "startTime": "2024-12-04T08:52:43.151Z",
                       "attachments": []
                     }
                   ],
@@ -573,12 +573,12 @@
                     {
                       "workerIndex": 2,
                       "status": "passed",
-                      "duration": 3842,
+                      "duration": 7004,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:57.073Z",
+                      "startTime": "2024-12-04T08:52:43.135Z",
                       "attachments": []
                     }
                   ],
@@ -614,7 +614,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:56.705Z",
+                      "startTime": "2024-12-04T08:52:42.775Z",
                       "attachments": []
                     }
                   ],
@@ -649,12 +649,12 @@
                     {
                       "workerIndex": 4,
                       "status": "passed",
-                      "duration": 3081,
+                      "duration": 7769,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:28:59.464Z",
+                      "startTime": "2024-12-04T08:52:44.860Z",
                       "attachments": []
                     }
                   ],
@@ -686,12 +686,12 @@
                     {
                       "workerIndex": 5,
                       "status": "passed",
-                      "duration": 5619,
+                      "duration": 10299,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:01.422Z",
+                      "startTime": "2024-12-04T08:52:46.010Z",
                       "attachments": []
                     }
                   ],
@@ -727,7 +727,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:01.109Z",
+                      "startTime": "2024-12-04T08:52:50.557Z",
                       "attachments": []
                     }
                   ],
@@ -762,12 +762,12 @@
                     {
                       "workerIndex": 7,
                       "status": "passed",
-                      "duration": 3158,
+                      "duration": 6883,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:02.366Z",
+                      "startTime": "2024-12-04T08:52:51.521Z",
                       "attachments": []
                     }
                   ],
@@ -799,12 +799,12 @@
                     {
                       "workerIndex": 8,
                       "status": "passed",
-                      "duration": 3148,
+                      "duration": 7030,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:03.109Z",
+                      "startTime": "2024-12-04T08:52:52.336Z",
                       "attachments": []
                     }
                   ],
@@ -840,7 +840,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:03.888Z",
+                      "startTime": "2024-12-04T08:52:53.178Z",
                       "attachments": []
                     }
                   ],
@@ -875,12 +875,12 @@
                     {
                       "workerIndex": 10,
                       "status": "passed",
-                      "duration": 3328,
+                      "duration": 6578,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:06.010Z",
+                      "startTime": "2024-12-04T08:52:54.897Z",
                       "attachments": []
                     }
                   ],
@@ -912,12 +912,12 @@
                     {
                       "workerIndex": 11,
                       "status": "passed",
-                      "duration": 4934,
+                      "duration": 6608,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:06.124Z",
+                      "startTime": "2024-12-04T08:52:57.503Z",
                       "attachments": []
                     }
                   ],
@@ -953,7 +953,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:06.494Z",
+                      "startTime": "2024-12-04T08:52:58.585Z",
                       "attachments": []
                     }
                   ],
@@ -988,12 +988,12 @@
                     {
                       "workerIndex": 13,
                       "status": "passed",
-                      "duration": 2917,
+                      "duration": 5711,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:08.151Z",
+                      "startTime": "2024-12-04T08:52:59.871Z",
                       "attachments": []
                     }
                   ],
@@ -1023,14 +1023,14 @@
                   "projectName": "MO_IPHONE15",
                   "results": [
                     {
-                      "workerIndex": 15,
+                      "workerIndex": 14,
                       "status": "passed",
-                      "duration": 3134,
+                      "duration": 6785,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:11.011Z",
+                      "startTime": "2024-12-04T08:53:00.055Z",
                       "attachments": []
                     }
                   ],
@@ -1066,7 +1066,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:09.552Z",
+                      "startTime": "2024-12-04T08:53:01.632Z",
                       "attachments": []
                     }
                   ],
@@ -1096,7 +1096,7 @@
                     {
                       "workerIndex": 16,
                       "status": "failed",
-                      "duration": 8,
+                      "duration": 3,
                       "error": {
                         "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
                         "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
@@ -1109,7 +1109,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:11.228Z",
+                      "startTime": "2024-12-04T08:53:02.177Z",
                       "attachments": []
                     }
                   ],
@@ -1136,7 +1136,7 @@
                     {
                       "workerIndex": 17,
                       "status": "failed",
-                      "duration": 4,
+                      "duration": 3,
                       "error": {
                         "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
                         "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
@@ -1149,7 +1149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:11.839Z",
+                      "startTime": "2024-12-04T08:53:02.447Z",
                       "attachments": []
                     }
                   ],
@@ -1185,7 +1185,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-11-28T16:29:11.418Z",
+                      "startTime": "2024-12-04T08:53:02.462Z",
                       "attachments": []
                     }
                   ],
@@ -1204,8 +1204,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-28T16:28:56.691Z",
-    "duration": 17856.985,
+    "startTime": "2024-12-04T08:52:42.739Z",
+    "duration": 24350.689,
     "expected": 10,
     "skipped": 6,
     "unexpected": 8,
