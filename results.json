@@ -1,0 +1,1214 @@
+{
+  "config": {
+    "configFile": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/playwright.config.ts",
+    "rootDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "DE_CHROME",
+        "name": "DE_CHROME",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "DE_FIREFOX",
+        "name": "DE_FIREFOX",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "DE_SAFARI",
+        "name": "DE_SAFARI",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "MO_PIXEL_7",
+        "name": "MO_PIXEL_7",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "MO_IPHONE15",
+        "name": "MO_IPHONE15",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "DE_EDGE",
+        "name": "DE_EDGE",
+        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "describe.spec.ts",
+      "file": "describe.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login",
+          "file": "describe.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC001"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_CHROME",
+                  "projectName": "DE_CHROME",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 369,
+                      "error": {
+                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "column": 29,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "column": 29,
+                            "line": 7
+                          },
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:57.096Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "column": 29,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-d9a1fe0a10f5aaa28933",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC001"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_FIREFOX",
+                  "projectName": "DE_FIREFOX",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 2296,
+                      "error": {
+                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "column": 29,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "column": 29,
+                            "line": 7
+                          },
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:57.089Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "column": 29,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-8912d3df69cf9bdc8ac5",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC001"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_SAFARI",
+                  "projectName": "DE_SAFARI",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "failed",
+                      "duration": 609,
+                      "error": {
+                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "column": 29,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "column": 29,
+                            "line": 7
+                          },
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:01.692Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "column": 29,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-7bfbbf9e1e0cdab566da",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC001"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_PIXEL_7",
+                  "projectName": "MO_PIXEL_7",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "status": "failed",
+                      "duration": 291,
+                      "error": {
+                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "column": 29,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "column": 29,
+                            "line": 7
+                          },
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:04.883Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "column": 29,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-bfac5a7b746dcbe08d9f",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC001"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_IPHONE15",
+                  "projectName": "MO_IPHONE15",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "status": "failed",
+                      "duration": 510,
+                      "error": {
+                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                          "column": 29,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                            "column": 29,
+                            "line": 7
+                          },
+                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts:7:29\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:06.841Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/auto-generated-repo-1/tests/describe.spec.ts",
+                        "column": 29,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-04e073bc3ed3c34a29f8",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            },
+            {
+              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-004"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_EDGE",
+                  "projectName": "DE_EDGE",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "status": "failed",
+                      "duration": 9,
+                      "error": {
+                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
+                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:10.692Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2e267c487c61585e0ec2-d4c354d81e0cb3132eda",
+              "file": "describe.spec.ts",
+              "line": 4,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "3 tests inside",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TA-001:has title or not",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC002"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_CHROME",
+                  "projectName": "DE_CHROME",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 3105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:57.113Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-acf51f8c4185d5390924",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC003"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_CHROME",
+                  "projectName": "DE_CHROME",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 3842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:57.073Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-edd456dffddd7a39bc58",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "DE_CHROME",
+                  "projectName": "DE_CHROME",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:56.705Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-b56622974662f2fe4304",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            },
+            {
+              "title": "TA-001:has title or not",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC002"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_FIREFOX",
+                  "projectName": "DE_FIREFOX",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 3081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:28:59.464Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-c6a708c3ec4790e455e1",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC003"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_FIREFOX",
+                  "projectName": "DE_FIREFOX",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 5619,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:01.422Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-071d4da9b7480fe0c519",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "DE_FIREFOX",
+                  "projectName": "DE_FIREFOX",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:01.109Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-9033007a185eafd5affe",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            },
+            {
+              "title": "TA-001:has title or not",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC002"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_SAFARI",
+                  "projectName": "DE_SAFARI",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "status": "passed",
+                      "duration": 3158,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:02.366Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-ee93247e152ed1dd12aa",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC003"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_SAFARI",
+                  "projectName": "DE_SAFARI",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 3148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:03.109Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-20ef29ff9d26269526bd",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "DE_SAFARI",
+                  "projectName": "DE_SAFARI",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:03.888Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-d6d887e7a58bc9d2cffa",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            },
+            {
+              "title": "TA-001:has title or not",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC002"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_PIXEL_7",
+                  "projectName": "MO_PIXEL_7",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "status": "passed",
+                      "duration": 3328,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:06.010Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-10dc3190863b993b4d1c",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC003"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_PIXEL_7",
+                  "projectName": "MO_PIXEL_7",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "status": "passed",
+                      "duration": 4934,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:06.124Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-c95dd1b07bf68a0d6454",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "MO_PIXEL_7",
+                  "projectName": "MO_PIXEL_7",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:06.494Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-643d86c09bb722d704dd",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            },
+            {
+              "title": "TA-001:has title or not",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC002"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_IPHONE15",
+                  "projectName": "MO_IPHONE15",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "status": "passed",
+                      "duration": 2917,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:08.151Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-59a25c392e97b33314ec",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "ID",
+                      "description": "TC003"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "MO_IPHONE15",
+                  "projectName": "MO_IPHONE15",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "status": "passed",
+                      "duration": 3134,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:11.011Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-6e7f63f4c4e87087945a",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "MO_IPHONE15",
+                  "projectName": "MO_IPHONE15",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:09.552Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-cad337f2ec87923b79bc",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            },
+            {
+              "title": "TA-001:has title or not",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "TA-001"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_EDGE",
+                  "projectName": "DE_EDGE",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "status": "failed",
+                      "duration": 8,
+                      "error": {
+                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
+                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:11.228Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-94bf314a446f4769aa81",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "TA-002:get started link",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "DE_EDGE",
+                  "projectName": "DE_EDGE",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "status": "failed",
+                      "duration": 4,
+                      "error": {
+                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
+                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:11.839Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-d0a189f173b8e87e2ca0",
+              "file": "example.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TA-003: this test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "DE_EDGE",
+                  "projectName": "DE_EDGE",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-11-28T16:29:11.418Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-3f11bf92f11d316d9db7",
+              "file": "example.spec.ts",
+              "line": 24,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-11-28T16:28:56.691Z",
+    "duration": 17856.985,
+    "expected": 10,
+    "skipped": 6,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}
