@@ -33,8 +33,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "DE_CHROME",
-        "name": "DE_CHROME",
+        "id": "Desktop Chrome",
+        "name": "Desktop Chrome",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -47,8 +47,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "DE_FIREFOX",
-        "name": "DE_FIREFOX",
+        "id": "Desktop Firefox",
+        "name": "Desktop Firefox",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -61,8 +61,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "DE_SAFARI",
-        "name": "DE_SAFARI",
+        "id": "Desktop Safari",
+        "name": "Desktop Safari",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -75,8 +75,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "MO_PIXEL_7",
-        "name": "MO_PIXEL_7",
+        "id": "Mobile Pixel 7",
+        "name": "Mobile Pixel 7",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -89,8 +89,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "MO_IPHONE15",
-        "name": "MO_IPHONE15",
+        "id": "Mobile iPhone 15",
+        "name": "Mobile iPhone 15",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -103,8 +103,8 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "DE_EDGE",
-        "name": "DE_EDGE",
+        "id": "Desktop Edge",
+        "name": "Desktop Edge",
         "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
@@ -121,386 +121,6 @@
   },
   "suites": [
     {
-      "title": "describe.spec.ts",
-      "file": "describe.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Login",
-          "file": "describe.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC001"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_CHROME",
-                  "projectName": "DE_CHROME",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "failed",
-                      "duration": 336,
-                      "error": {
-                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                          "column": 29,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                            "column": 29,
-                            "line": 7
-                          },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:43.136Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                        "column": 29,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-d9a1fe0a10f5aaa28933",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            },
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC001"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_FIREFOX",
-                  "projectName": "DE_FIREFOX",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "failed",
-                      "duration": 722,
-                      "error": {
-                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                          "column": 29,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                            "column": 29,
-                            "line": 7
-                          },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:43.118Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                        "column": 29,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-8912d3df69cf9bdc8ac5",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            },
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC001"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_SAFARI",
-                  "projectName": "DE_SAFARI",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "status": "failed",
-                      "duration": 722,
-                      "error": {
-                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                          "column": 29,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                            "column": 29,
-                            "line": 7
-                          },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:50.879Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                        "column": 29,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-7bfbbf9e1e0cdab566da",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            },
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC001"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_PIXEL_7",
-                  "projectName": "MO_PIXEL_7",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "status": "failed",
-                      "duration": 246,
-                      "error": {
-                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                          "column": 29,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                            "column": 29,
-                            "line": 7
-                          },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:53.775Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                        "column": 29,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-bfac5a7b746dcbe08d9f",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            },
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC001"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_IPHONE15",
-                  "projectName": "MO_IPHONE15",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "status": "failed",
-                      "duration": 369,
-                      "error": {
-                        "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-                        "stack": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                          "column": 29,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                            "column": 29,
-                            "line": 7
-                          },
-                          "message": "Error: not ok\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         testInfo\u001b[33m.\u001b[39mannotations\u001b[33m.\u001b[39mpush({ type\u001b[33m:\u001b[39m \u001b[32m'ID'\u001b[39m\u001b[33m,\u001b[39m description\u001b[33m:\u001b[39m \u001b[32m'TC001'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m  6 |\u001b[39m         expect(\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'this is ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         expect(\u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'not ok'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts:7:29\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:58.951Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/describe.spec.ts",
-                        "column": 29,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-04e073bc3ed3c34a29f8",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            },
-            {
-              "title": "TA-004:as a user, I must be able to login with my correct credentials and be redirected to list page",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-004"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_EDGE",
-                  "projectName": "DE_EDGE",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "status": "failed",
-                      "duration": 4,
-                      "error": {
-                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
-                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:53:01.907Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2e267c487c61585e0ec2-d4c354d81e0cb3132eda",
-              "file": "describe.spec.ts",
-              "line": 4,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "example.spec.ts",
       "file": "example.spec.ts",
       "column": 0,
@@ -508,694 +128,360 @@
       "specs": [],
       "suites": [
         {
-          "title": "3 tests inside",
+          "title": "Sample",
           "file": "example.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "TA-001:has title or not",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Chrome",
+                  "projectName": "Desktop Chrome",
+                  "results": [
                     {
-                      "type": "ID",
-                      "description": "TC002"
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 19360,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 6
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-06T13:53:55.659Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results/example-Sample-TA-001-As-a-1109c--be-redirected-to-list-page-Desktop-Chrome/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 6
+                      }
                     }
                   ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-bd70a81da5a55ede2e14",
+              "file": "example.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "DE_CHROME",
-                  "projectName": "DE_CHROME",
+                  "projectId": "Desktop Firefox",
+                  "projectName": "Desktop Firefox",
                   "results": [
                     {
                       "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 6409,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 16487,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 6
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-04T08:52:43.151Z",
-                      "attachments": []
+                      "startTime": "2024-12-06T13:53:55.659Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results/example-Sample-TA-001-As-a-1109c--be-redirected-to-list-page-Desktop-Firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 6
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-acf51f8c4185d5390924",
+              "id": "a30a6eba6312f6b87ea5-ed12dfb8a600aaeeb3d2",
               "file": "example.spec.ts",
-              "line": 5,
+              "line": 4,
               "column": 7
             },
             {
-              "title": "TA-002:get started link",
-              "ok": true,
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC003"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "DE_CHROME",
-                  "projectName": "DE_CHROME",
+                  "projectId": "Desktop Safari",
+                  "projectName": "Desktop Safari",
                   "results": [
                     {
                       "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 7004,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 15273,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 6
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-04T08:52:43.135Z",
-                      "attachments": []
+                      "startTime": "2024-12-06T13:53:55.666Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results/example-Sample-TA-001-As-a-1109c--be-redirected-to-list-page-Desktop-Safari/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 6
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-edd456dffddd7a39bc58",
+              "id": "a30a6eba6312f6b87ea5-88c33a01c3a05f9289f3",
               "file": "example.spec.ts",
-              "line": 13,
+              "line": 4,
               "column": 7
             },
             {
-              "title": "TA-003: this test 2",
-              "ok": true,
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "DE_CHROME",
-                  "projectName": "DE_CHROME",
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Pixel 7",
+                  "projectName": "Mobile Pixel 7",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
+                      "workerIndex": 3,
+                      "status": "failed",
+                      "duration": 16434,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 6
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-04T08:52:42.775Z",
-                      "attachments": []
+                      "startTime": "2024-12-06T13:53:55.651Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results/example-Sample-TA-001-As-a-1109c--be-redirected-to-list-page-Mobile-Pixel-7/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 6
+                      }
                     }
                   ],
-                  "status": "skipped"
+                  "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-b56622974662f2fe4304",
+              "id": "a30a6eba6312f6b87ea5-c40befbffd7e12f16812",
               "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
+              "line": 4,
+              "column": 7
             },
             {
-              "title": "TA-001:has title or not",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC002"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "DE_FIREFOX",
-                  "projectName": "DE_FIREFOX",
+                  "projectId": "Mobile iPhone 15",
+                  "projectName": "Mobile iPhone 15",
                   "results": [
                     {
                       "workerIndex": 4,
-                      "status": "passed",
-                      "duration": 7769,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 7247,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24",
+                        "location": {
+                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 6
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 6
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 9 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:6:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-04T08:52:44.860Z",
-                      "attachments": []
+                      "startTime": "2024-12-06T13:54:12.081Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/test-results/example-Sample-TA-001-As-a-1109c--be-redirected-to-list-page-Mobile-iPhone-15/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 6
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-c6a708c3ec4790e455e1",
+              "id": "a30a6eba6312f6b87ea5-6ad81f920d06773dab72",
               "file": "example.spec.ts",
-              "line": 5,
+              "line": 4,
               "column": 7
             },
             {
-              "title": "TA-002:get started link",
-              "ok": true,
+              "title": "TA-001:As a user, I must be able to login with my correct credentials and be redirected to list page",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC003"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "DE_FIREFOX",
-                  "projectName": "DE_FIREFOX",
+                  "projectId": "Desktop Edge",
+                  "projectName": "Desktop Edge",
                   "results": [
                     {
                       "workerIndex": 5,
-                      "status": "passed",
-                      "duration": 10299,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:46.010Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-071d4da9b7480fe0c519",
-              "file": "example.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "TA-003: this test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "DE_FIREFOX",
-                  "projectName": "DE_FIREFOX",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:50.557Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-9033007a185eafd5affe",
-              "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
-            },
-            {
-              "title": "TA-001:has title or not",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC002"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_SAFARI",
-                  "projectName": "DE_SAFARI",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "status": "passed",
-                      "duration": 6883,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:51.521Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-ee93247e152ed1dd12aa",
-              "file": "example.spec.ts",
-              "line": 5,
-              "column": 7
-            },
-            {
-              "title": "TA-002:get started link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC003"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_SAFARI",
-                  "projectName": "DE_SAFARI",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "status": "passed",
-                      "duration": 7030,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:52.336Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-20ef29ff9d26269526bd",
-              "file": "example.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "TA-003: this test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "DE_SAFARI",
-                  "projectName": "DE_SAFARI",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:53.178Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-d6d887e7a58bc9d2cffa",
-              "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
-            },
-            {
-              "title": "TA-001:has title or not",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC002"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_PIXEL_7",
-                  "projectName": "MO_PIXEL_7",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "status": "passed",
-                      "duration": 6578,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:54.897Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-10dc3190863b993b4d1c",
-              "file": "example.spec.ts",
-              "line": 5,
-              "column": 7
-            },
-            {
-              "title": "TA-002:get started link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC003"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_PIXEL_7",
-                  "projectName": "MO_PIXEL_7",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "status": "passed",
-                      "duration": 6608,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:57.503Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-c95dd1b07bf68a0d6454",
-              "file": "example.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "TA-003: this test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "MO_PIXEL_7",
-                  "projectName": "MO_PIXEL_7",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:58.585Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-643d86c09bb722d704dd",
-              "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
-            },
-            {
-              "title": "TA-001:has title or not",
-              "ok": true,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC002"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_IPHONE15",
-                  "projectName": "MO_IPHONE15",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "status": "passed",
-                      "duration": 5711,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:52:59.871Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-59a25c392e97b33314ec",
-              "file": "example.spec.ts",
-              "line": 5,
-              "column": 7
-            },
-            {
-              "title": "TA-002:get started link",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "ID",
-                      "description": "TC003"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "MO_IPHONE15",
-                  "projectName": "MO_IPHONE15",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "status": "passed",
-                      "duration": 6785,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:53:00.055Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-6e7f63f4c4e87087945a",
-              "file": "example.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "TA-003: this test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "MO_IPHONE15",
-                  "projectName": "MO_IPHONE15",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:53:01.632Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-cad337f2ec87923b79bc",
-              "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
-            },
-            {
-              "title": "TA-001:has title or not",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "TA-001"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_EDGE",
-                  "projectName": "DE_EDGE",
-                  "results": [
-                    {
-                      "workerIndex": 16,
                       "status": "failed",
                       "duration": 3,
                       "error": {
-                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
-                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"pnpm exec playwright install msedge\"",
+                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"pnpm exec playwright install msedge\""
                       },
                       "errors": [
                         {
-                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
+                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"pnpm exec playwright install msedge\""
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-04T08:53:02.177Z",
+                      "startTime": "2024-12-06T13:54:13.663Z",
                       "attachments": []
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-94bf314a446f4769aa81",
+              "id": "a30a6eba6312f6b87ea5-9eddabd1e3d74a85db6b",
               "file": "example.spec.ts",
-              "line": 5,
+              "line": 4,
               "column": 7
-            },
-            {
-              "title": "TA-002:get started link",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "DE_EDGE",
-                  "projectName": "DE_EDGE",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "status": "failed",
-                      "duration": 3,
-                      "error": {
-                        "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\"",
-                        "stack": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: Chromium distribution 'msedge' is not found at /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge\nRun \"npx playwright install msedge\""
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:53:02.447Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-d0a189f173b8e87e2ca0",
-              "file": "example.spec.ts",
-              "line": 13,
-              "column": 7
-            },
-            {
-              "title": "TA-003: this test 2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip"
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "DE_EDGE",
-                  "projectName": "DE_EDGE",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-04T08:53:02.462Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-3f11bf92f11d316d9db7",
-              "file": "example.spec.ts",
-              "line": 24,
-              "column": 8
             }
           ]
         }
@@ -1204,11 +490,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-04T08:52:42.739Z",
-    "duration": 24350.689,
-    "expected": 10,
-    "skipped": 6,
-    "unexpected": 8,
+    "startTime": "2024-12-06T13:53:55.232Z",
+    "duration": 24599.361,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 6,
     "flaky": 0
   }
 }
