@@ -1,5 +1,4 @@
 import { defineConfig, devices } from "@playwright/test";
-import CustomReporter from "./custom-reporter";
 
 /**
  * Read environment variables from file.
@@ -27,9 +26,6 @@ export default defineConfig({
   reporter: [["json", { outputFile: "results.json" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
-
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
   },
@@ -49,8 +45,8 @@ export default defineConfig({
           },
         },
       },
+      outputDir: "videos/desktop-chrome",
     },
-
     {
       name: "Desktop Firefox",
       use: {
@@ -64,8 +60,8 @@ export default defineConfig({
           },
         },
       },
+      outputDir: "videos/desktop-firefox",
     },
-
     {
       name: "Desktop Safari",
       use: {
@@ -79,6 +75,7 @@ export default defineConfig({
           },
         },
       },
+      outputDir: "videos/desktop-safari",
     },
 
     /* Test against mobile viewport. */
@@ -95,6 +92,7 @@ export default defineConfig({
           },
         },
       },
+      outputDir: "videos/mobile-pixel-7",
     },
     {
       name: "Mobile iPhone 15",
@@ -109,24 +107,26 @@ export default defineConfig({
           },
         },
       },
+      outputDir: "videos/mobile-iphone-15",
     },
 
     /* Test against branded browsers. */
-    {
-      name: "Desktop Edge",
-      use: {
-        ...devices["Desktop Edge"],
-        channel: "msedge",
-        viewport: { width: 1920, height: 1080 },
-        video: {
-          mode: "retain-on-failure",
-          size: {
-            width: 1920,
-            height: 1080,
-          },
-        },
-      },
-    },
+    // {
+    //   name: "Desktop Edge",
+    //   use: {
+    //     ...devices["Desktop Edge"],
+    //     channel: "msedge",
+    //     viewport: { width: 1920, height: 1080 },
+    //     video: {
+    //       mode: "retain-on-failure",
+    //       size: {
+    //         width: 1920,
+    //         height: 1080,
+    //       },
+    //     },
+    //   },
+    //   outputDir: "videos/desktop-edge",
+    // },
     // {
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
