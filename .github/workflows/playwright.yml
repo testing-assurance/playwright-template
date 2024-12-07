@@ -2,7 +2,7 @@ name: Playwright Tests
 on:
   workflow_dispatch:
     inputs:
-      value:
+      projectId:
         description: "some value to pass to the workflow"
         required: false
         default: ""
@@ -28,6 +28,10 @@ jobs:
         run: pnpm exec playwright install --with-deps
       - name: Run Playwright tests
         run: pnpm exec playwright test
+      - name: Install ts-node
+        run: pnpm add -D ts-node
+      - name: Run upload script
+        run: pnpm exec ts-node core/upload.ts "${{ github.event.inputs.projectId }}"
       - uses: EndBug/add-and-commit@v9
         with:
           message: "Auto-commit results.json"

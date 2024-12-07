@@ -1,18 +1,11 @@
 import results from "../results.json";
-import { Spec } from "./types";
+import { FailedTests, Spec } from "./types";
 import { getIdFromTitle } from "./utils";
+import { put } from "@vercel/blob";
+import fs from "fs";
+import "dotenv/config";
 
-/**
-[] - go through results
-[] - return a list of failed tests: {testId, envName, video-location}
-[] - store them in an external db "/{projectId}/{testId}/{envs}/{video}"
- */
-
-type FailedTests = {
-  testId: string;
-  environment: string;
-  videoLocation: string | null;
-};
+const projectId = process.argv[2];
 
 type Suites = (typeof results)["suites"];
 
@@ -43,4 +36,24 @@ function getList(suites: Suites): FailedTests[] {
   return failedTests;
 }
 
-console.log(getList(results.suites));
+const list = getList(results.suites);
+
+function uploadVideos(list: ReturnType<typeof getList>) {
+  list.forEach((item) => {
+    if (item.videoLocation) {
+      const videoBuffer = fs.readFileSync(item.videoLocation);
+      // do it one by one instead of doing it in the loop to prevent potential upload errors
+      put(
+        `${projectId}/${item.testId}/${item.environment}/video.webm`,
+        videoBuffer,
+        {
+          access: "public",
+          token: process.env.BLOB_READ_WRITE_TOKEN,
+          addRandomSuffix: false,
+        }
+      );
+    }
+  });
+}
+
+uploadVideos(list)
