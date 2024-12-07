@@ -1,4 +1,4 @@
-import { defineConfig, devices } from "@playwright/test";
+import { defineConfig, devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
@@ -8,95 +8,94 @@ import dotenv from 'dotenv';
 import path from 'path';
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
-
 export default defineConfig({
-  testDir: "./tests",
+  testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [["json", { outputFile: "results.json" }]],
+  reporter: [['json', { outputFile: 'results.json' }]],
   use: {
-    trace: "on-first-retry",
+    trace: 'on-first-retry',
   },
 
   projects: [
     {
-      name: "Desktop Chrome",
+      name: 'Desktop Chrome',
       use: {
-        ...devices["Desktop Chrome"],
+        ...devices['Desktop Chrome'],
         viewport: { width: 1920, height: 1080 },
         video: {
-          mode: "retain-on-failure",
+          mode: 'retain-on-failure',
           size: {
             width: 1920,
             height: 1080,
           },
         },
       },
-      outputDir: "videos/desktop-chrome",
+      outputDir: 'videos/desktop-chrome',
     },
     {
-      name: "Desktop Firefox",
+      name: 'Desktop Firefox',
       use: {
-        ...devices["Desktop Firefox"],
+        ...devices['Desktop Firefox'],
         viewport: { width: 1920, height: 1080 },
         video: {
-          mode: "retain-on-failure",
+          mode: 'retain-on-failure',
           size: {
             width: 1920,
             height: 1080,
           },
         },
       },
-      outputDir: "videos/desktop-firefox",
+      outputDir: 'videos/desktop-firefox',
     },
     {
-      name: "Desktop Safari",
+      name: 'Desktop Safari',
       use: {
-        ...devices["Desktop Safari"],
+        ...devices['Desktop Safari'],
         viewport: { width: 1920, height: 1080 },
         video: {
-          mode: "retain-on-failure",
+          mode: 'retain-on-failure',
           size: {
             width: 1920,
             height: 1080,
           },
         },
       },
-      outputDir: "videos/desktop-safari",
+      outputDir: 'videos/desktop-safari',
     },
 
     /* Test against mobile viewport. */
     {
-      name: "Mobile Pixel 7",
+      name: 'Mobile Pixel 7',
       use: {
-        ...devices["Pixel 7"],
+        ...devices['Pixel 7'],
         viewport: { width: 412, height: 915 },
         video: {
-          mode: "retain-on-failure",
+          mode: 'retain-on-failure',
           size: {
             width: 412,
             height: 915,
           },
         },
       },
-      outputDir: "videos/mobile-pixel-7",
+      outputDir: 'videos/mobile-pixel-7',
     },
     {
-      name: "Mobile iPhone 15",
+      name: 'Mobile iPhone 15',
       use: {
-        ...devices["iPhone 15"],
+        ...devices['iPhone 15'],
         viewport: { width: 393, height: 852 },
         video: {
-          mode: "retain-on-failure",
+          mode: 'retain-on-failure',
           size: {
             width: 393,
             height: 852,
           },
         },
       },
-      outputDir: "videos/mobile-iphone-15",
+      outputDir: 'videos/mobile-iphone-15',
     },
 
     /* Test against branded browsers. */

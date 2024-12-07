@@ -1,5 +1,10 @@
 {
-  "name": "auto-generated-repo-1",
+  "name": "auto-generated-repo",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
