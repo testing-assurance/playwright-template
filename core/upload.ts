@@ -3,7 +3,6 @@ import { FailedTests, Spec } from "./types";
 import { getIdFromTitle } from "./utils";
 import { put } from "@vercel/blob";
 import fs from "fs";
-import "dotenv/config";
 
 const projectId = process.argv[2];
 
@@ -48,7 +47,8 @@ function uploadVideos(list: ReturnType<typeof getList>) {
         videoBuffer,
         {
           access: "public",
-          token: process.env.BLOB_READ_WRITE_TOKEN,
+          token:
+            "vercel_blob_rw_Xp8sfOuFASN7ZePB_dmu8W8LS3LJ8mIXh9fYeaVdHYuxMHE",
           addRandomSuffix: false,
         }
       );
@@ -56,4 +56,4 @@ function uploadVideos(list: ReturnType<typeof getList>) {
   });
 }
 
-uploadVideos(list)
+uploadVideos(list);
