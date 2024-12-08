@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       projectId:
-        description: "some value to pass to the workflow"
+        description: 'some value to pass to the workflow'
         required: false
-        default: ""
+        default: ''
         type: string
   push:
     branches: [main]
@@ -23,17 +23,17 @@ jobs:
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: npm install -g pnpm && pnpm add -D ts-node && pnpm install
+        run: npm install -g pnpm && pnpm install
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Run Playwright tests
         run: pnpm exec playwright test
         continue-on-error: true
       - name: Run upload script
-        run: pnpm exec ts-node core/upload.ts "${{ github.event.inputs.projectId }}"
+        run: npx tsx core/upload.ts "${{ github.event.inputs.projectId }}"
       - uses: EndBug/add-and-commit@v9
         with:
-          message: "Auto-commit results.json"
-          add: "results.json"
+          message: 'Auto-commit results.json'
+          add: 'results.json'
           push: true
           force: true
