@@ -23,13 +23,12 @@ jobs:
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: npm install -g pnpm && pnpm install
+        run: npm install -g pnpm && pnpm add -D ts-node && pnpm install
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
       - name: Run Playwright tests
         run: pnpm exec playwright test
-      - name: Install ts-node
-        run: pnpm add -D ts-node
+        continue-on-error: true
       - name: Run upload script
         run: pnpm exec ts-node core/upload.ts "${{ github.event.inputs.projectId }}"
       - uses: EndBug/add-and-commit@v9
