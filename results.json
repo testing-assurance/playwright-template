@@ -1,8 +1,8 @@
 {
   "config": {
-    "configFile": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/playwright.config.ts",
-    "rootDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
-    "forbidOnly": false,
+    "configFile": "/home/runner/work/playwright-template/playwright-template/playwright.config.ts",
+    "rootDir": "/home/runner/work/playwright-template/playwright-template/tests",
+    "forbidOnly": true,
     "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -29,13 +29,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-chrome",
+        "outputDir": "/home/runner/work/playwright-template/playwright-template/videos/desktop-chrome",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {},
         "id": "Desktop Chrome",
         "name": "Desktop Chrome",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
+        "testDir": "/home/runner/work/playwright-template/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -43,13 +43,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-firefox",
+        "outputDir": "/home/runner/work/playwright-template/playwright-template/videos/desktop-firefox",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {},
         "id": "Desktop Firefox",
         "name": "Desktop Firefox",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
+        "testDir": "/home/runner/work/playwright-template/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -57,13 +57,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-safari",
+        "outputDir": "/home/runner/work/playwright-template/playwright-template/videos/desktop-safari",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {},
         "id": "Desktop Safari",
         "name": "Desktop Safari",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
+        "testDir": "/home/runner/work/playwright-template/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -71,13 +71,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/mobile-pixel-7",
+        "outputDir": "/home/runner/work/playwright-template/playwright-template/videos/mobile-pixel-7",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {},
         "id": "Mobile Pixel 7",
         "name": "Mobile Pixel 7",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
+        "testDir": "/home/runner/work/playwright-template/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -85,13 +85,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/mobile-iphone-15",
+        "outputDir": "/home/runner/work/playwright-template/playwright-template/videos/mobile-iphone-15",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {},
         "id": "Mobile iPhone 15",
         "name": "Mobile iPhone 15",
-        "testDir": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests",
+        "testDir": "/home/runner/work/playwright-template/playwright-template/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -102,7 +102,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.48.2",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -120,7 +120,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "TA-001: Failed Test 2",
+              "title": "TA-001: Failed Test",
               "ok": false,
               "tags": [],
               "tests": [
@@ -134,40 +134,127 @@
                     {
                       "workerIndex": 0,
                       "status": "failed",
-                      "duration": 12457,
+                      "duration": 938,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                           "column": 24,
                           "line": 7
                         },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                             "column": 24,
                             "line": 7
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:45.697Z",
+                      "startTime": "2024-12-08T15:35:30.026Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-chrome/example-Sample-TA-001-Failed-Test-2-Desktop-Chrome/video.webm"
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-chrome/example-Sample-TA-001-Failed-Test-Desktop-Chrome/video.webm"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 1261,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-12-08T15:35:32.696Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-chrome/example-Sample-TA-001-Failed-Test-Desktop-Chrome-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-chrome/example-Sample-TA-001-Failed-Test-Desktop-Chrome-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 1192,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2024-12-08T15:35:34.620Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-chrome/example-Sample-TA-001-Failed-Test-Desktop-Chrome-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                         "column": 24,
                         "line": 7
                       }
@@ -176,14 +263,14 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-4a76a6fa67ffac4c94f3",
+              "id": "a30a6eba6312f6b87ea5-20c3d29477528e24e5a2",
               "file": "example.spec.ts",
               "line": 5,
               "column": 3
             },
             {
               "title": "TA-002: Passed Test",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -194,51 +281,27 @@
                   "projectName": "Desktop Chrome",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "status": "failed",
+                      "workerIndex": 3,
+                      "status": "passed",
                       "duration": 7,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 15,
-                          "line": 12
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 15,
-                            "line": 12
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15\u001b[22m"
-                        }
-                      ],
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:45.696Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 15,
-                        "line": 12
-                      }
+                      "startTime": "2024-12-08T15:35:36.411Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a30a6eba6312f6b87ea5-abddbd6a700067945c3b",
               "file": "example.spec.ts",
-              "line": 11,
+              "line": 10,
               "column": 3
             },
             {
-              "title": "TA-001: Failed Test 2",
+              "title": "TA-001: Failed Test",
               "ok": false,
               "tags": [],
               "tests": [
@@ -248,162 +311,131 @@
                   "expectedStatus": "passed",
                   "projectId": "Desktop Firefox",
                   "projectName": "Desktop Firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "failed",
-                      "duration": 13790,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 24,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 24,
-                            "line": 7
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-07T09:50:45.696Z",
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-firefox/example-Sample-TA-001-Failed-Test-2-Desktop-Firefox/video.webm"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 24,
-                        "line": 7
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-1d4b973549f1a534c738",
-              "file": "example.spec.ts",
-              "line": 5,
-              "column": 3
-            },
-            {
-              "title": "TA-002: Passed Test",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Firefox",
-                  "projectName": "Desktop Firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "failed",
-                      "duration": 7,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 15,
-                          "line": 12
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 15,
-                            "line": 12
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-12-07T09:50:45.697Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 15,
-                        "line": 12
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "a30a6eba6312f6b87ea5-a197765a35bbe53041b2",
-              "file": "example.spec.ts",
-              "line": 11,
-              "column": 3
-            },
-            {
-              "title": "TA-001: Failed Test 2",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Desktop Safari",
-                  "projectName": "Desktop Safari",
                   "results": [
                     {
                       "workerIndex": 4,
                       "status": "failed",
-                      "duration": 12322,
+                      "duration": 1710,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                           "column": 24,
                           "line": 7
                         },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                             "column": 24,
                             "line": 7
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:46.089Z",
+                      "startTime": "2024-12-08T15:35:36.894Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/desktop-safari/example-Sample-TA-001-Failed-Test-2-Desktop-Safari/video.webm"
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-firefox/example-Sample-TA-001-Failed-Test-Desktop-Firefox/video.webm"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "status": "failed",
+                      "duration": 2017,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-12-08T15:35:40.238Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-firefox/example-Sample-TA-001-Failed-Test-Desktop-Firefox-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-firefox/example-Sample-TA-001-Failed-Test-Desktop-Firefox-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "status": "failed",
+                      "duration": 1579,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2024-12-08T15:35:43.607Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-firefox/example-Sample-TA-001-Failed-Test-Desktop-Firefox-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                         "column": 24,
                         "line": 7
                       }
@@ -412,13 +444,45 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-2de784685522e2313242",
+              "id": "a30a6eba6312f6b87ea5-b1875ff5e4d05b6ead9f",
               "file": "example.spec.ts",
               "line": 5,
               "column": 3
             },
             {
               "title": "TA-002: Passed Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Firefox",
+                  "projectName": "Desktop Firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T15:35:46.484Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-a197765a35bbe53041b2",
+              "file": "example.spec.ts",
+              "line": 10,
+              "column": 3
+            },
+            {
+              "title": "TA-001: Failed Test",
               "ok": false,
               "tags": [],
               "tests": [
@@ -430,51 +494,176 @@
                   "projectName": "Desktop Safari",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 8,
                       "status": "failed",
-                      "duration": 27,
+                      "duration": 1872,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 15,
-                          "line": 12
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
                         },
-                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 15,
-                            "line": 12
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:46.089Z",
-                      "attachments": [],
+                      "startTime": "2024-12-08T15:35:46.969Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-safari/example-Sample-TA-001-Failed-Test-Desktop-Safari/video.webm"
+                        }
+                      ],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 15,
-                        "line": 12
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "status": "failed",
+                      "duration": 1704,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-12-08T15:35:51.226Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-safari/example-Sample-TA-001-Failed-Test-Desktop-Safari-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-safari/example-Sample-TA-001-Failed-Test-Desktop-Safari-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "status": "failed",
+                      "duration": 1289,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2024-12-08T15:35:53.552Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/desktop-safari/example-Sample-TA-001-Failed-Test-Desktop-Safari-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
                       }
                     }
                   ],
                   "status": "unexpected"
+                }
+              ],
+              "id": "a30a6eba6312f6b87ea5-d13d5fac8dbf65dcb94b",
+              "file": "example.spec.ts",
+              "line": 5,
+              "column": 3
+            },
+            {
+              "title": "TA-002: Passed Test",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Desktop Safari",
+                  "projectName": "Desktop Safari",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-12-08T15:35:55.412Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
               "id": "a30a6eba6312f6b87ea5-5aef63523c4aa9fd19cc",
               "file": "example.spec.ts",
-              "line": 11,
+              "line": 10,
               "column": 3
             },
             {
-              "title": "TA-001: Failed Test 2",
+              "title": "TA-001: Failed Test",
               "ok": false,
               "tags": [],
               "tests": [
@@ -486,42 +675,129 @@
                   "projectName": "Mobile Pixel 7",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 12,
                       "status": "failed",
-                      "duration": 10540,
+                      "duration": 584,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                           "column": 24,
                           "line": 7
                         },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                             "column": 24,
                             "line": 7
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:46.727Z",
+                      "startTime": "2024-12-08T15:35:55.894Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/mobile-pixel-7/example-Sample-TA-001-Failed-Test-2-Mobile-Pixel-7/video.webm"
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-pixel-7/example-Sample-TA-001-Failed-Test-Mobile-Pixel-7/video.webm"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 13,
+                      "status": "failed",
+                      "duration": 667,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-12-08T15:35:57.071Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-pixel-7/example-Sample-TA-001-Failed-Test-Mobile-Pixel-7-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-pixel-7/example-Sample-TA-001-Failed-Test-Mobile-Pixel-7-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 14,
+                      "status": "failed",
+                      "duration": 804,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2024-12-08T15:35:58.374Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-pixel-7/example-Sample-TA-001-Failed-Test-Mobile-Pixel-7-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                         "column": 24,
                         "line": 7
                       }
@@ -530,14 +806,14 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-a040ceab06bf8211dd4c",
+              "id": "a30a6eba6312f6b87ea5-266ffe60d78cc4c18b66",
               "file": "example.spec.ts",
               "line": 5,
               "column": 3
             },
             {
               "title": "TA-002: Passed Test",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -548,51 +824,27 @@
                   "projectName": "Mobile Pixel 7",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "status": "failed",
+                      "workerIndex": 15,
+                      "status": "passed",
                       "duration": 7,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 15,
-                          "line": 12
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 15,
-                            "line": 12
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15\u001b[22m"
-                        }
-                      ],
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:57.866Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 15,
-                        "line": 12
-                      }
+                      "startTime": "2024-12-08T15:35:59.767Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a30a6eba6312f6b87ea5-04a5516dc3186abb16cd",
               "file": "example.spec.ts",
-              "line": 11,
+              "line": 10,
               "column": 3
             },
             {
-              "title": "TA-001: Failed Test 2",
+              "title": "TA-001: Failed Test",
               "ok": false,
               "tags": [],
               "tests": [
@@ -604,42 +856,129 @@
                   "projectName": "Mobile iPhone 15",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 16,
                       "status": "failed",
-                      "duration": 4967,
+                      "duration": 782,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
                         "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                           "column": 24,
                           "line": 7
                         },
-                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                             "column": 24,
                             "line": 7
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m\"TA-001: Failed Test 2\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://www.google.com\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"https://www.failed.com\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m     expect(\u001b[35m2\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:7:24\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:58.182Z",
+                      "startTime": "2024-12-08T15:36:00.254Z",
                       "attachments": [
                         {
                           "name": "video",
                           "contentType": "video/webm",
-                          "path": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/videos/mobile-iphone-15/example-Sample-TA-001-Failed-Test-2-Mobile-iPhone-15/video.webm"
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-iphone-15/example-Sample-TA-001-Failed-Test-Mobile-iPhone-15/video.webm"
                         }
                       ],
                       "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 17,
+                      "status": "failed",
+                      "duration": 1122,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2024-12-08T15:36:01.657Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-iphone-15/example-Sample-TA-001-Failed-Test-Mobile-iPhone-15-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-iphone-15/example-Sample-TA-001-Failed-Test-Mobile-iPhone-15-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                        "column": 24,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 18,
+                      "status": "failed",
+                      "duration": 676,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
+                        "location": {
+                          "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                          "column": 24,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
+                            "column": 24,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n\n\u001b[0m \u001b[90m  5 |\u001b[39m   test(\u001b[32m'TA-001: Failed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m  6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.google.com'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m     expect(page\u001b[33m.\u001b[39murl())\u001b[33m.\u001b[39mtoBe(\u001b[32m'https://www.failed.com'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m   test(\u001b[32m'TA-002: Passed Test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2024-12-08T15:36:03.409Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/runner/work/playwright-template/playwright-template/videos/mobile-iphone-15/example-Sample-TA-001-Failed-Test-Mobile-iPhone-15-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/runner/work/playwright-template/playwright-template/tests/example.spec.ts",
                         "column": 24,
                         "line": 7
                       }
@@ -648,14 +987,14 @@
                   "status": "unexpected"
                 }
               ],
-              "id": "a30a6eba6312f6b87ea5-51214f036b5a401547c4",
+              "id": "a30a6eba6312f6b87ea5-c20e3b459c2e429821e9",
               "file": "example.spec.ts",
               "line": 5,
               "column": 3
             },
             {
               "title": "TA-002: Passed Test",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -666,47 +1005,23 @@
                   "projectName": "Mobile iPhone 15",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "status": "failed",
-                      "duration": 6,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15",
-                        "location": {
-                          "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                          "column": 15,
-                          "line": 12
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                            "column": 15,
-                            "line": 12
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m2\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m   test(\u001b[32m\"TA-002: Passed Test\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     expect(\u001b[35m1\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m2\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts:12:15\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 19,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-07T09:50:59.037Z",
-                      "attachments": [],
-                      "errorLocation": {
-                        "file": "/Users/sajadabbasi/Projects/testing-assurance/playwright-template/tests/example.spec.ts",
-                        "column": 15,
-                        "line": 12
-                      }
+                      "startTime": "2024-12-08T15:36:04.699Z",
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "a30a6eba6312f6b87ea5-2c4079d13295d7fd8631",
               "file": "example.spec.ts",
-              "line": 11,
+              "line": 10,
               "column": 3
             }
           ]
@@ -716,11 +1031,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-07T09:50:45.238Z",
-    "duration": 18110.929,
-    "expected": 0,
+    "startTime": "2024-12-08T15:35:29.524Z",
+    "duration": 35201.779,
+    "expected": 5,
     "skipped": 0,
-    "unexpected": 10,
+    "unexpected": 5,
     "flaky": 0
   }
 }
