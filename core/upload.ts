@@ -43,7 +43,7 @@ function uploadVideos(list: ReturnType<typeof getList>) {
       const videoBuffer = fs.readFileSync(item.videoLocation);
       // do it one by one instead of doing it in the loop to prevent potential upload errors
       put(
-        `x-${projectId}/${item.testId}/${item.environment}/video.webm`,
+        `${projectId}/${item.testId}/${item.environment}/video.webm`,
         videoBuffer,
         {
           access: "public",
