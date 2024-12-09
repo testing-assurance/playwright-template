@@ -15,30 +15,49 @@ jobs:
           node-version: 'lts/*'
       - name: Install dependencies
         run: npm install -g pnpm && pnpm install
-      - name: Install Playwright Browsers
+      - name: Install playwright browsers
         run: pnpm exec playwright install --with-deps
   run-tests:
     needs: install-dependencies
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    # permissions:
+    #   contents: write
     timeout-minutes: 60
     steps:
       - name: Run Playwright tests
         run: pnpm exec playwright test
         continue-on-error: true
+      - name: Upload results.json
+        uses: actions/upload-artifact@v3
+        with:
+          name: results-json
+          path: results.json
+      - name: Upload bug-videos directory
+        uses: actions/upload-artifact@v3
+        with:
+          name: bug-videos
+          path: bug-videos/
+
   upload-videos:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
-      - name: Upload videos
+     - uses: actions/checkout@v4
+      - name: Download bug-videos
+            uses: actions/download-artifact@v3
+            with:
+              name: bug-videos
+      - name: Upload videos to Vercel BLOB
         run: npx tsx core/upload-videos.ts "${{ vars.PROJECT_ID }}"
-        continue-on-error: true
   commit-results-json:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Download test results
+            uses: actions/download-artifact@v3
+            with:
+              name: results-json
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'ci: auto-commit results.json'
@@ -48,5 +67,10 @@ jobs:
     needs: [commit-results-json, upload-videos]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - name: Download test results
+      uses: actions/download-artifact@v3
+      with:
+        name: results-json
       - name: Sync board
         run: npx tsx core/sync-board.ts "${{ vars.PROJECT_ID }}"
