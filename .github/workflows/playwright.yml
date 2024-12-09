@@ -38,6 +38,7 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'ci: auto-commit results.json'
