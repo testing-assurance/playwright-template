@@ -134,7 +134,7 @@
                     {
                       "workerIndex": 0,
                       "status": "failed",
-                      "duration": 938,
+                      "duration": 1191,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -158,7 +158,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:30.026Z",
+                      "startTime": "2024-12-08T15:46:00.058Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -175,7 +175,7 @@
                     {
                       "workerIndex": 1,
                       "status": "failed",
-                      "duration": 1261,
+                      "duration": 1103,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -199,7 +199,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2024-12-08T15:35:32.696Z",
+                      "startTime": "2024-12-08T15:46:02.980Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -221,7 +221,7 @@
                     {
                       "workerIndex": 2,
                       "status": "failed",
-                      "duration": 1192,
+                      "duration": 743,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -245,7 +245,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2024-12-08T15:35:34.620Z",
+                      "startTime": "2024-12-08T15:46:04.769Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -288,7 +288,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:36.411Z",
+                      "startTime": "2024-12-08T15:46:06.104Z",
                       "attachments": []
                     }
                   ],
@@ -315,7 +315,7 @@
                     {
                       "workerIndex": 4,
                       "status": "failed",
-                      "duration": 1710,
+                      "duration": 1775,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -339,7 +339,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:36.894Z",
+                      "startTime": "2024-12-08T15:46:06.594Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -356,7 +356,7 @@
                     {
                       "workerIndex": 5,
                       "status": "failed",
-                      "duration": 2017,
+                      "duration": 2134,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -380,7 +380,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2024-12-08T15:35:40.238Z",
+                      "startTime": "2024-12-08T15:46:09.960Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -402,7 +402,7 @@
                     {
                       "workerIndex": 6,
                       "status": "failed",
-                      "duration": 1579,
+                      "duration": 1692,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -426,7 +426,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2024-12-08T15:35:43.607Z",
+                      "startTime": "2024-12-08T15:46:13.446Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -469,7 +469,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:46.484Z",
+                      "startTime": "2024-12-08T15:46:18.471Z",
                       "attachments": []
                     }
                   ],
@@ -496,7 +496,7 @@
                     {
                       "workerIndex": 8,
                       "status": "failed",
-                      "duration": 1872,
+                      "duration": 6088,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -520,7 +520,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:46.969Z",
+                      "startTime": "2024-12-08T15:46:18.962Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -537,7 +537,7 @@
                     {
                       "workerIndex": 9,
                       "status": "failed",
-                      "duration": 1704,
+                      "duration": 1828,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -561,7 +561,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2024-12-08T15:35:51.226Z",
+                      "startTime": "2024-12-08T15:46:27.225Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -583,7 +583,7 @@
                     {
                       "workerIndex": 10,
                       "status": "failed",
-                      "duration": 1289,
+                      "duration": 1252,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -607,7 +607,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2024-12-08T15:35:53.552Z",
+                      "startTime": "2024-12-08T15:46:29.683Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -650,7 +650,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:55.412Z",
+                      "startTime": "2024-12-08T15:46:31.526Z",
                       "attachments": []
                     }
                   ],
@@ -677,7 +677,7 @@
                     {
                       "workerIndex": 12,
                       "status": "failed",
-                      "duration": 584,
+                      "duration": 1395,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -701,7 +701,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:55.894Z",
+                      "startTime": "2024-12-08T15:46:32.019Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -718,7 +718,7 @@
                     {
                       "workerIndex": 13,
                       "status": "failed",
-                      "duration": 667,
+                      "duration": 727,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -742,7 +742,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2024-12-08T15:35:57.071Z",
+                      "startTime": "2024-12-08T15:46:34.015Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -764,7 +764,7 @@
                     {
                       "workerIndex": 14,
                       "status": "failed",
-                      "duration": 804,
+                      "duration": 600,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -788,7 +788,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2024-12-08T15:35:58.374Z",
+                      "startTime": "2024-12-08T15:46:35.390Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -831,7 +831,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:35:59.767Z",
+                      "startTime": "2024-12-08T15:46:36.602Z",
                       "attachments": []
                     }
                   ],
@@ -858,7 +858,7 @@
                     {
                       "workerIndex": 16,
                       "status": "failed",
-                      "duration": 782,
+                      "duration": 970,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -882,7 +882,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:36:00.254Z",
+                      "startTime": "2024-12-08T15:46:37.092Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -899,7 +899,7 @@
                     {
                       "workerIndex": 17,
                       "status": "failed",
-                      "duration": 1122,
+                      "duration": 1337,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -923,7 +923,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 1,
-                      "startTime": "2024-12-08T15:36:01.657Z",
+                      "startTime": "2024-12-08T15:46:38.647Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -945,7 +945,7 @@
                     {
                       "workerIndex": 18,
                       "status": "failed",
-                      "duration": 676,
+                      "duration": 735,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.\u001b[7mfai\u001b[27mle\u001b[7md\u001b[27m.com\"\u001b[39m\nReceived: \u001b[31m\"https://www.\u001b[7mgoog\u001b[27mle.com\u001b[7m/\u001b[27m\"\u001b[39m\n    at /home/runner/work/playwright-template/playwright-template/tests/example.spec.ts:7:24",
@@ -969,7 +969,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 2,
-                      "startTime": "2024-12-08T15:36:03.409Z",
+                      "startTime": "2024-12-08T15:46:40.632Z",
                       "attachments": [
                         {
                           "name": "video",
@@ -1012,7 +1012,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-12-08T15:36:04.699Z",
+                      "startTime": "2024-12-08T15:46:41.972Z",
                       "attachments": []
                     }
                   ],
@@ -1031,8 +1031,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-08T15:35:29.524Z",
-    "duration": 35201.779,
+    "startTime": "2024-12-08T15:45:59.554Z",
+    "duration": 42443.053,
     "expected": 5,
     "skipped": 0,
     "unexpected": 5,
