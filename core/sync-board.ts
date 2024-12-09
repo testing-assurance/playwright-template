@@ -5,4 +5,4 @@ function syncBoard(projectId: string) {
   return fetch(`${baseURL}/api/board-integrations/notion/inner-sync?projectId=${projectId}`);
 }
 
-syncBoard(projectId);
+syncBoard(projectId).then(() => console.log('Syncing board...'));
