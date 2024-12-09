@@ -33,6 +33,6 @@ jobs:
         run: npx tsx core/upload.ts "${{ vars.PROJECT_ID }}"
       - uses: EndBug/add-and-commit@v9
         with:
-          message: 'Auto-commit results.json'
+          message: 'ci: auto-commit results.json'
           add: 'results.json'
           push: true

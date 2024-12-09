@@ -40,7 +40,7 @@ function uploadVideos(list: ReturnType<typeof getList>) {
     if (item.videoLocation) {
       const videoBuffer = fs.readFileSync(item.videoLocation);
       // do it one by one instead of doing it in the loop to prevent potential upload errors
-      put(`${projectId}/${item.testId}/${item.environment}/video.webm`, videoBuffer, {
+      put(`bug-videos/${projectId}/${item.testId}/${item.environment}/video.webm`, videoBuffer, {
         access: 'public',
         token: 'vercel_blob_rw_Xp8sfOuFASN7ZePB_dmu8W8LS3LJ8mIXh9fYeaVdHYuxMHE',
         addRandomSuffix: false,
