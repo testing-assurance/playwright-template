@@ -19,6 +19,7 @@ jobs:
         run: pnpm exec playwright install --with-deps
   run-tests:
     needs: install-dependencies
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     timeout-minutes: 60
