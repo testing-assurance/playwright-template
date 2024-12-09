@@ -47,5 +47,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Sync board
-      - run: echo "Sync board"
+        run: echo "Sync board"
         continue-on-error: true
