@@ -45,9 +45,8 @@ jobs:
           add: 'results.json'
           push: true
   sync-board:
-    needs: commit-results-json
+    needs: [commit-results-json, upload-videos]
     runs-on: ubuntu-latest
     steps:
       - name: Sync board
-        run: echo "Sync board"
-        continue-on-error: true
+        run: npx tsx core/sync-board.ts "${{ vars.PROJECT_ID }}"
