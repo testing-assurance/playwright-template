@@ -36,4 +36,3 @@ jobs:
           message: 'Auto-commit results.json'
           add: 'results.json'
           push: true
-          force: true
