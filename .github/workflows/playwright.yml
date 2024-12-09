@@ -1,38 +1,51 @@
 name: Playwright Tests
 on:
   workflow_dispatch:
-    inputs:
-      projectId:
-        description: 'Pass projectId'
-        required: false
-        default: ''
-        type: string
   push:
     branches: [main]
   pull_request:
     branches: [main]
 jobs:
-  test:
-    permissions:
-      contents: write
-    timeout-minutes: 60
+  install-dependencies:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 'lts/*'
       - name: Install dependencies
         run: npm install -g pnpm && pnpm install
       - name: Install Playwright Browsers
         run: pnpm exec playwright install --with-deps
+  run-tests:
+    needs: install-dependencies
+    permissions:
+      contents: write
+    timeout-minutes: 60
+    steps:
       - name: Run Playwright tests
         run: pnpm exec playwright test
         continue-on-error: true
-      - name: Run upload script
-        run: npx tsx core/upload.ts "${{ vars.PROJECT_ID }}"
+  upload-videos:
+    needs: run-tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload videos
+        run: npx tsx core/upload-videos.ts "${{ vars.PROJECT_ID }}"
+        continue-on-error: true
+  commit-results-json:
+    needs: run-tests
+    runs-on: ubuntu-latest
+    steps:
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'ci: auto-commit results.json'
           add: 'results.json'
           push: true
+  sync-board:
+    needs: commit-results-json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync board
+      - run: echo "Sync board"
+        continue-on-error: true
