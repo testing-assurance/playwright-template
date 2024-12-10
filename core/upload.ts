@@ -3,7 +3,7 @@ import { FailedTests, Spec } from './types';
 import { getIdFromTitle } from './utils';
 import { put } from '@vercel/blob';
 import fs from 'fs';
-import hbjs from 'handbrake-js';
+import handbrake from 'handbrake-js';
 
 const projectId = process.argv[2];
 
@@ -36,7 +36,7 @@ function getList(suites: Suites): FailedTests[] {
 
 function convertToM4V(video: ReturnType<typeof getList>[number]) {
   const output = video.videoLocation!.replace('.webm', '.m4v');
-  hbjs
+  handbrake
     .spawn({ input: video.videoLocation!, output: output })
     .on('error', (err) => {
       console.log('Error converting video:', err);
