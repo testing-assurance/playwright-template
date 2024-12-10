@@ -17,10 +17,12 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.48.2",
+    "@types/handbrake-js": "^5.0.4",
     "@types/node": "^22.9.0"
   },
   "dependencies": {
     "@vercel/blob": "^0.27.0",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "handbrake-js": "^7.1.0"
   }
 }
