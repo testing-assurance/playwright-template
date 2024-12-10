@@ -36,6 +36,7 @@ function getList(suites: Suites): FailedTests[] {
 
 function convertToM4V(videoLocation: string): { outputUrl: string } {
   const output = videoLocation.replace('.webm', '.m4v');
+  console.log("🚀 ~ convertToM4V ~ output:", output)
   hbjs
     .spawn({ input: videoLocation, output: output })
     .on('error', (err) => {
@@ -48,12 +49,13 @@ function convertToM4V(videoLocation: string): { outputUrl: string } {
 }
 
 const list = getList(results.suites);
+console.log("🚀 ~ list:", list)
 
 function uploadVideos(list: ReturnType<typeof getList>) {
   list.forEach(async (item) => {
     if (item.videoLocation) {
-      const videoBuffer = fs.readFileSync(item.videoLocation);
       const { outputUrl } = convertToM4V(item.videoLocation);
+      const videoBuffer = fs.readFileSync(outputUrl);
       // do it one by one instead of doing it in the loop to prevent potential upload errors
       put(outputUrl, videoBuffer, {
         access: 'public',
