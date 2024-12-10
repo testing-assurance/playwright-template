@@ -34,34 +34,31 @@ function getList(suites: Suites): FailedTests[] {
   return failedTests;
 }
 
-function convertToM4V(videoLocation: string): { outputUrl: string } {
-  const output = videoLocation.replace('.webm', '.m4v');
-  console.log("🚀 ~ convertToM4V ~ output:", output)
+function convertToM4V(video: ReturnType<typeof getList>[number]) {
+  const output = video.videoLocation!.replace('.webm', '.m4v');
   hbjs
-    .spawn({ input: videoLocation, output: output })
+    .spawn({ input: video.videoLocation!, output: output })
     .on('error', (err) => {
       console.log('Error converting video:', err);
     })
-    .on('end', () => {
+    .on('complete', () => {
       console.log('Video conversion completed...');
-    });
-  return { outputUrl: output };
-}
-
-const list = getList(results.suites);
-console.log("🚀 ~ list:", list)
-
-function uploadVideos(list: ReturnType<typeof getList>) {
-  list.forEach(async (item) => {
-    if (item.videoLocation) {
-      const { outputUrl } = convertToM4V(item.videoLocation);
-      const videoBuffer = fs.readFileSync(outputUrl);
+      const videoBuffer = fs.readFileSync(output);
+      const storageURL = `bug-videos/${projectId}/${video.testId}/${video.environment}/video.m4v`;
       // do it one by one instead of doing it in the loop to prevent potential upload errors
-      put(outputUrl, videoBuffer, {
+      put(storageURL, videoBuffer, {
         access: 'public',
         token: 'vercel_blob_rw_Xp8sfOuFASN7ZePB_dmu8W8LS3LJ8mIXh9fYeaVdHYuxMHE',
         addRandomSuffix: false,
       });
+    });
+}
+
+const list = getList(results.suites);
+function uploadVideos(list: ReturnType<typeof getList>) {
+  list.forEach(async (item) => {
+    if (item.videoLocation) {
+      convertToM4V(item);
     }
   });
 }
