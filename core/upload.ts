@@ -39,7 +39,6 @@ function convertToM4V(videoLocation: string): { outputUrl: string } {
   hbjs
     .spawn({ input: videoLocation, output: output })
     .on('error', (err) => {
-      // invalid user input, no video found etc
       console.log('Error converting video:', err);
     })
     .on('end', () => {
