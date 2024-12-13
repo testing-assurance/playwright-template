@@ -35,7 +35,12 @@ function getList(suites: Suites): FailedTests[] {
 }
 
 function convertToM4V(video: ReturnType<typeof getList>[number]) {
-  const output = video.videoLocation!.replace('.webm', '.m4v');
+  if (!video.videoLocation) {
+    console.error('No video location found...');
+    return;
+  }
+  const output = video.videoLocation.replace('.webm', '.m4v');
+
   handbrake
     .spawn({ input: video.videoLocation!, output: output })
     .on('error', (err) => {
