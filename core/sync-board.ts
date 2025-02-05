@@ -3,7 +3,7 @@ const baseURL = 'https://ta-app-git-preview-sajad-abbasis-projects.vercel.app';
 
 function syncBoard(projectId: string) {
   console.log('Syncing board for projectId: ', projectId);
-  return fetch(`${baseURL}/api/board-integrations/notion/sync?projectId=${projectId}`);
+  return fetch(`${baseURL}/api/board-integrations/sync?projectId=${projectId}`);
 }
 
 syncBoard(projectId)
