@@ -99,7 +99,8 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.48.2",
+    "updateSourceMethod": "patch",
+    "version": "1.50.1",
     "workers": 1,
     "webServer": null
   },
@@ -111,8 +112,8 @@
     }
   ],
   "stats": {
-    "startTime": "2024-12-21T12:01:52.644Z",
-    "duration": 14.784999999999968,
+    "startTime": "2025-02-05T09:30:13.666Z",
+    "duration": 17.099000000000046,
     "expected": 0,
     "skipped": 0,
     "unexpected": 0,
